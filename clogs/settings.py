@@ -102,6 +102,7 @@ INSTALLED_APPS = [
     # our apps
     "clogs.core",
     "clogs.users",
+    "clogs.viewer",
     "clogs.themes",
     "django_oapif",
     # third party packages
@@ -256,13 +257,7 @@ LANGUAGES = (
 )
 
 LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
-STATIC_URL = os.environ["STATIC_URL"]
 STATIC_ROOT = "/static_root"
-
-# OAUTH2 Config
-OAUTH2_PROVIDER = {
-    "PKCE_REQUIRED": os.getenv("OAUTH2_PKCE_REQUIRED", "false").lower() == "true"
-}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/

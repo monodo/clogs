@@ -14,7 +14,6 @@ services:
     environment:
       DISABLE_MIGRATION_SCRIPT_ON_PRODUCTION:
       CLEAR_PUBLIC_SCHEMA_ON_FIXTURIZE:
-      STATIC_URL:
       PREFIX_URL:
       PGDATABASE:
       PGUSER:

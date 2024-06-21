@@ -17,3 +17,5 @@ env.backup
 /media/
 .DS_Store
 .idea
+clogs/core/static/geogirafe-viewer/node_modules
+clogs/core/static/geogirafe-viewer/dist

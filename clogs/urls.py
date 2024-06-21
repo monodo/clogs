@@ -21,9 +21,11 @@ from django_oapif.urls import oapif_router
 
 from clogs.core import views as core_views
 from clogs.themes.api import api
+from clogs.viewer.views import viewer
 
 urlpatterns = [
     path("", core_views.home, name="home"),
+    path("viewer", viewer, name="viewer"),
     path("clone-geoportal", core_views.clone_geoportal, name="clone_geoportal"),
     path("admin/", admin.site.urls, {"extra_context": {"DEBUG": settings.DEBUG}}),
     path("oapif/", include(oapif_router.urls)),
